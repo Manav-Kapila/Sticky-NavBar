@@ -13,14 +13,16 @@
 
     <!-- CUSTOM STYLESHEET -->
     <link rel="stylesheet" href="style.css">
-    <title>Rooted Adoption </title>
+    <title>RootedAdoption-StickyNavbar </title>
 </head>
 
 <body class="bodyArea">
     <div class="parentNav">
         <div class="navContainer ">
             <nav class="logoContainer"><img class="logoBrand" src="Logo.png" alt="logo"></nav>
-            <nav class="navLinks">
+            <h1 class="toggleMenuIcon"><button class="toggleBtn" onclick="toggleView()">&#x2026</button></h1>
+
+            <nav class="navLinks hide" id="toggleViewId">
                 <ul class="navUl">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
@@ -43,6 +45,12 @@
 
 
     <script src="all.min.js">
+    </script>
+    <script>
+        function toggleView() {
+            let x = document.getElementById("toggleViewId");
+            x.classList.toggle("hide");
+        }
     </script>
 </body>
 

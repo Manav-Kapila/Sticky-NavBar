@@ -1,0 +1,87 @@
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .bodyArea {
+        max-width: 1920px !important;
+        margin: 0 auto;
+    }
+    
+    div.parentNav {
+        background-color: #fff;
+        margin: 0 auto;
+        max-width: 1920px;
+        width: 100%;
+        z-index: 10;
+        position: fixed;
+    }
+    
+    div.navContainer {
+        width: 100%;
+        padding: 12px;
+    }
+    
+    nav.logoContainer {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .logoBrand {
+        max-width: 177px;
+        height: auto;
+    }
+    
+    .logoContainer {
+        float: left;
+    }
+    
+    .logoContainer::after,
+    .logoContainer::before {
+        clear: both;
+    }
+    
+    nav.navLinks {
+        font-family: "Manrope";
+        float: right;
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        white-space: nowrap;
+        font-size: 18px;
+        color: #2a2b33;
+        font-weight: bold;
+    }
+    
+    nav.navLinks::after,
+    nav.navLinks::before {
+        clear: both;
+    }
+    
+    li {
+        list-style: none;
+        display: inline-block;
+        padding-right: 50px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #2a2b33;
+    }
+    
+    a.navBtn {
+        background-color: rgb(6, 79, 122);
+        color: #fff;
+        text-align: left;
+        white-space: nowrap;
+        font-family: "Manrope";
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0.5em;
+        border: 2px solid #064f7a;
+    }
+    
+    .blankSpace {
+        height: 500px;
+    }
